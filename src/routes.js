@@ -6,8 +6,11 @@ routes.get('/', function (req, res) {
     return res.render("layout.njk")
 })
 
-routes.get('/products/create', ProductController.create)
 
+routes.get('/products/create', ProductController.create)
+routes.post('/products/create', ProductController.post)
+
+/* ALIAS */ 
 routes.get('/ads/create', function (req, res) {
     return res.redirect("/products/create")
 })
