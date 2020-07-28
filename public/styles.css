@@ -10,7 +10,7 @@
 }
 
 :root { /*Variaveis de cores*/
-    --color-green: #50fa7b;
+    --color-green: #1ea03e;
     --color-pink: rgb(224, 36, 94);
     --color-youtubeGreyMedium: #323232; /*cinza medio youtube*/
     --color-youtubeGreyStrong: #282828; /*cinza forte youtube*/
@@ -52,9 +52,19 @@ button {
     transition: all 0.2s;
 }
 
-.button:hover {
+.button.edit{
+    background-color: var(--color-green);
+    color: whitesmoke;
+}
+
+.button.delete {
     background-color: var(--color-pink);
     color: whitesmoke;
+}
+
+.button:hover{
+    background-color: var(--color-yellowRocketseat);
+    color: black;
 }
 
 /* == HEADER == */
@@ -143,6 +153,10 @@ section.form .header h3 {
     margin-bottom: 16px;
 }
 
+form .fields {
+    margin-bottom: 64px;
+}
+
 form .item {
     margin-bottom: 16px;
 }
@@ -171,6 +185,15 @@ form .item textarea {
     min-height: 150px;
 }
 
-form .fields {
-    margin-bottom: 64px;
+form .item span {
+    padding: 8px 16px;
+    background-color: var(--color-yellowRocketseat);
+    border-radius: 64px;
+    color: black;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
 }
