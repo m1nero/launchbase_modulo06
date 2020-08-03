@@ -50,7 +50,7 @@ module.exports = {
         results = await Category.all()
         const categories = results.rows
 
-        results = await Category.files(product.id)
+        results = await Product.files(product.id)
         let files = results.rows
         files = files.map(file => ({
             ...file,
@@ -63,9 +63,26 @@ module.exports = {
     async put(req, res) {
         const keys = Object.keys(req.body)
         for (key of keys) {
-            if (req.body[key] == ""){
+            if (req.body[key] == "" && key != "removed_files"){
                 return res.send("Complete todos os campos!")
             }
+        }
+
+
+        if (req.files.length != 0) {
+            const NewFilesPromise = req.files.map(file => 
+                File.create({...file, product_id: req.body.id}))
+
+            await Promise.all(NewFilesPromise)
+        }
+
+        if(req.body.removed_files) {
+            const removedFiles = req.body.removed_files.split(",")
+            const lastIndex = removedFiles.length - 1
+            removedFiles.splice(lastIndex, 1)
+
+            const removedFilesPromise = removedFiles.map(id => File.delete(id))
+            await Promise.all(removedFilesPromise)
         }
 
         req.body.price = req.body.price.replace(/\D/g,"")
