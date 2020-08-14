@@ -277,7 +277,7 @@ form .item #photos-preview img {
     opacity: 1;
 }
 
-/* Product View */
+/* == PRODUCT VIEW == */
 .product-single {
     background-color: white;
     display: grid;
@@ -290,7 +290,7 @@ form .item #photos-preview img {
     border-radius: 4px;
 }
 
-/* Product Single Gallery */
+/* == PRODUCT SINGLE GALLERY == */
 .product-single .gallery {
     width: 100%;
 }
