@@ -324,7 +324,7 @@ form .item #photos-preview img {
     opacity: 1;
 }
 
-/* LightBox product Gallery */
+/* == LIGHTBOX PRODUCT GALLERY == */
 .product-single .highlight .lightbox-target {
     position: fixed;
     width: 100%;
