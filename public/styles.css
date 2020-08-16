@@ -40,7 +40,6 @@ footer {
     margin-top: auto;
 }
 
-
 .button {
     background-color: var(--color-yellowRocketseat);
     color: var(--color-youtubeGreyStrong);
@@ -385,7 +384,7 @@ form .item #photos-preview img {
     letter-spacing: 0.4px;
 }
 
-/* Price-buy */
+/* == PRICE-BUY == */
 .product-single .price-buy {
     display: flex;
     align-items: center;
