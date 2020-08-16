@@ -12,11 +12,11 @@
 :root { /*Variaveis de cores*/
     --color-green: #1ea03e;
     --color-pink: rgb(224, 36, 94);
-    --color-youtubeGreyMedium: #323232; /*cinza medio youtube*/
-    --color-youtubeGreyStrong: #282828; /*cinza forte youtube*/
+    --color-youtubeGreyMedium: #323232; /*Cinza Medio Youtube*/
+    --color-youtubeGreyStrong: #282828; /*Cinza Forte Youtube*/
     --color-yellowRocketseat: #fd951f; /*Amarelo Rocketseat*/
     --color-purpleRocketseat: #7159c1; /*Roxo Rocketseat*/
-    --color-twitterGrey: #282a36; /*cinza azulado twitter*/
+    --color-twitterGrey: #282a36; /*Cinza Azulado Twitter*/
 }
 
 html, body {
