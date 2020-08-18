@@ -459,7 +459,7 @@ form .item #photos-preview img {
     text-decoration: line-through;
 }
 
-/* Search Page */
+/* == SEARCH Page */
 .search-products {
     display: grid;
     grid-template-columns: 20px 1fr;
