@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
-* { /*Deixa bordas zeradas por padrão*/
+/* Deixa bordas zeradas por padrão*/
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
