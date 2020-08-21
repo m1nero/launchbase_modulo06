@@ -3,13 +3,10 @@ const Product = require('../models/Product')
 
 module.exports = {
     async index(req, res) {
-
         try {
             let results, params = {}
             const {filter, category} = req.query
-
             if(!filter) return res.redirect("/")
-
             params.filter = filter
 
             if(category) {
@@ -43,9 +40,7 @@ module.exports = {
                 name: product.category_name
             })).reduce((categoriesFiltered, category) => {
                 const found = categoriesFiltered.some(cat => cat.id == category.id)
-                
                 if(!found) categoriesFiltered.push(category)
-
                 return categoriesFiltered
             }, [])
 
